@@ -33,28 +33,60 @@ module.exports = function toReadable (x) {
         }
         switch (string[1]){
             case '9':
-                readable += 'ninety ';
+                if (string[2] === '0'){
+                    readable += 'ninety';
+                }else {
+                    readable += 'ninety ';
+                }
                 break;
             case '8':
-                readable += 'eighty ';
+                if (string[2] === '0'){
+                    readable += 'eighty';
+                }else {
+                    readable += 'eighty ';
+                }
                 break;
             case '7':
-                readable += 'seventy ';
+                if (string[2] === '0'){
+                    readable += 'seventy';
+                }else {
+                    readable += 'seventy ';
+                }
                 break;
             case '6':
-                readable += 'sixty ';
+                if (string[2] === '0'){
+                    readable += 'sixty';
+                }else {
+                    readable += 'sixty ';
+                }
                 break;
             case '5':
-                readable += 'fifty ';
+                if (string[2] === '0'){
+                    readable += 'fifty';
+                }else {
+                    readable += 'fifty ';
+                }
                 break;
             case '4':
-                readable += 'forty ';
+                if (string[2] === '0'){
+                    readable += 'forty';
+                }else {
+                    readable += 'forty ';
+                }
                 break;
             case '3':
-                readable += 'thirty ';
+                if (string[2] === '0'){
+                    readable += 'thirty';
+                }else {
+                    readable += 'thirty ';
+                }
                 break;
             case '2':
-                readable += 'twenty ';
+                if (string[2] === '0'){
+                    readable += 'twenty';
+                }else {
+                    readable += 'twenty ';
+                }
                 break;
             case '1':
                 switch (string[2]){
@@ -84,6 +116,9 @@ module.exports = function toReadable (x) {
                         break;
                     case '1':
                         readable += 'eleven'
+                        break;
+                    case '0':
+                        readable += 'ten'
                         break;
                 }
                 break;
@@ -122,28 +157,60 @@ module.exports = function toReadable (x) {
     }else if (string.length === 2){
         switch (string[0]){
             case '9':
-                readable += 'ninety ';
+                if (string[1] === '0'){
+                    readable += 'ninety';
+                }else {
+                    readable += 'ninety ';
+                }
                 break;
             case '8':
-                readable += 'eighty ';
+                if (string[1] === '0'){
+                    readable += 'eighty';
+                }else {
+                    readable += 'eighty ';
+                }
                 break;
             case '7':
-                readable += 'seventy ';
+                if (string[1] === '0'){
+                    readable += 'seventy';
+                }else {
+                    readable += 'seventy ';
+                }
                 break;
             case '6':
-                readable += 'sixty ';
+                if (string[1] === '0'){
+                    readable += 'sixty';
+                }else {
+                    readable += 'sixty ';
+                }
                 break;
             case '5':
-                readable += 'fifty ';
+                if (string[1] === '0'){
+                    readable += 'fifty';
+                }else {
+                    readable += 'fifty ';
+                }
                 break;
             case '4':
-                readable += 'forty ';
+                if (string[1] === '0'){
+                    readable += 'forty';
+                }else {
+                    readable += 'forty ';
+                }
                 break;
             case '3':
-                readable += 'thirty ';
+                if (string[1] === '0'){
+                    readable += 'thirty';
+                }else {
+                    readable += 'thirty ';
+                }
                 break;
             case '2':
-                readable += 'twenty ';
+                if (string[1] === '0'){
+                    readable += 'twenty';
+                }else {
+                    readable += 'twenty ';
+                }
                 break;
             case '1':
                 switch (string[1]){
@@ -173,6 +240,9 @@ module.exports = function toReadable (x) {
                         break;
                     case '1':
                         readable += 'eleven'
+                        break;
+                    case '0':
+                        readable += 'ten'
                         break;
                 }
                 break;
